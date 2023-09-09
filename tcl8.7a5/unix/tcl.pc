@@ -1,0 +1,16 @@
+# tcl pkg-config source file
+
+prefix=/Users/ruby/tcl-install
+exec_prefix=/Users/ruby/tcl-install
+libdir=/Users/ruby/tcl-install/lib
+includedir=${prefix}/include
+libfile=libtcl8.7.dylib
+
+Name: Tool Command Language
+Description: Tcl is a powerful, easy-to-learn dynamic programming language, suitable for a wide range of uses.
+URL: http://www.tcl.tk/
+Version: 8.7a5
+Requires.private: zlib >= 1.2.3, libtommath >= 1.2.0
+Libs: -L${libdir} -ltcl8.7 -ltclstub8.7
+Libs.private:  -lz  -lpthread -framework CoreFoundation 
+Cflags: -I${includedir}
