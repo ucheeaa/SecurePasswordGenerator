@@ -30,11 +30,9 @@ def comp_password(pass_length: int) -> str:
 
 
 '''
-ChatGPT
-In this code:
-I've removed the loop and delim variable, which were not needed for password generation.
-I've added the requirement for at least one capital letter, one small letter, one number, and one special character in the generated password.
-I've created separate lists for each type of required character (uppercase letter, lowercase letter, digit, special character), and then combined them to ensure at least one character from each set is included.
+I removed the loop and delim variable, which were not needed for password generation.
+I added the requirement for at least one capital letter, one small letter, one number, and one special character in the generated password.
+I created separate lists for each type of required character (uppercase letter, lowercase letter, digit, special character), and then combined them to ensure at least one character from each set is included.
 The remaining characters needed for the password are chosen randomly from the combined set of letters, digits, and special characters.
 All chosen characters are shuffled to ensure randomness, and the final password is created by joining them.
 '''
